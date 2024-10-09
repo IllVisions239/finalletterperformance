@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Layout</title>
+    <style>
+        /* Reset default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set html and body to full height */
+        html, body {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container to hold the two columns */
+        .container {
+            display: flex;
+            height: 100%;
+            background-color: #262324;
+        }
+
+        /* Common styles for both columns */
+        .column {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Left column specific styles */
+        .left {
+            background-color: #262324;
+        }
+
+        /* Right column specific styles */
+        .right {
+            background-color: #262324;
+        }
+
+        /* Button styles */
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #ed1c24;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #c31a1f;
+        }
+
+        /* Responsive adjustments (optional) */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .column {
+                height: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Column -->
+        <div class="column left">
+            <a href="https://www.facebook.com/ChristopherWorelds" class="btn" target="_blank" rel="noopener noreferrer">
+                Visit Christopher's Facebook
+            </a>
+        </div>
+        <!-- Right Column -->
+        <div class="column right">
+            <a href="https://www.facebook.com/ScottWorelds" class="btn" target="_blank" rel="noopener noreferrer">
+                Visit Scott's Facebook
+            </a>
+        </div>
+    </div>
+</body>
+</html>
